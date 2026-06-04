@@ -1,87 +1,101 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تجربة WebView</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body{
-      margin:0;
-      padding:0;
-      font-family:Tahoma;
-      background:#111827;
-      color:white;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:transparent;
+    overflow:hidden;
+    font-family:Tahoma;
+}
+
+/* البانر */
+.banner{
+    position:fixed;
+
+    /* ارفعه أو نزله من هنا */
+    top:10px;
+
+    left:-320px;
+    width:300px;
+    height:70px;
+
+    background:linear-gradient(135deg,#00d4ff,#2563eb);
+
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    padding:0 15px;
+
+    color:white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.35);
+
+    animation:slide 6s infinite;
+}
+
+/* الصورة */
+.logo{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:white;
+    margin-left:12px;
+}
+
+/* النص */
+.text h3{
+    margin:0;
+    font-size:17px;
+}
+
+.text p{
+    margin:3px 0 0;
+    font-size:13px;
+    opacity:0.9;
+}
+
+/* الحركة */
+@keyframes slide{
+
+    0%{
+        left:-320px;
+        opacity:0;
     }
 
-    .box{
-      width:90%;
-      max-width:350px;
-      background:#1f2937;
-      padding:25px;
-      border-radius:20px;
-      text-align:center;
-      box-shadow:0 0 20px rgba(0,0,0,0.4);
+    10%{
+        left:10px;
+        opacity:1;
     }
 
-    h1{
-      color:#00d4ff;
+    70%{
+        left:10px;
+        opacity:1;
     }
 
-    p{
-      opacity:0.8;
+    100%{
+        left:350px;
+        opacity:0;
     }
-
-    button{
-      margin-top:20px;
-      border:none;
-      padding:12px 25px;
-      border-radius:12px;
-      background:#00d4ff;
-      color:black;
-      font-size:18px;
-      cursor:pointer;
-      transition:0.3s;
-    }
-
-    button:hover{
-      transform:scale(1.05);
-    }
-
-    #result{
-      margin-top:20px;
-      color:#22c55e;
-      font-size:18px;
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
-  <div class="box">
-    <h1>مرحبا محمد 👋</h1>
+<div class="banner">
 
-    <p>
-      هذه صفحة HTML تعمل داخل WebView
-    </p>
+    <div class="logo"></div>
 
-    <button onclick="showMessage()">
-      اضغط هنا
-    </button>
+    <div class="text">
+        <h3>القرآن حياة</h3>
+        <p>مرحبا بك داخل التطبيق ✨</p>
+    </div>
 
-    <div id="result"></div>
-  </div>
-
-  <script>
-    function showMessage(){
-      document.getElementById("result").innerHTML =
-      "تم الضغط على الزر بنجاح 🚀";
-    }
-  </script>
+</div>
 
 </body>
 </html>
