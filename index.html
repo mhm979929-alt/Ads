@@ -10,40 +10,53 @@ body{
     padding:0;
     background:transparent;
     overflow:hidden;
-    font-family:Tahoma;
+    font-family:Tajawal, Tahoma;
 }
 
 /* البانر */
 .banner{
     position:fixed;
+    top:8px;
 
-    /* ارفعه أو نزله من هنا */
-    top:10px;
+    left:-340px;
 
-    left:-320px;
-    width:300px;
-    height:70px;
+    width:310px;
+    height:72px;
 
-    background:linear-gradient(135deg,#00d4ff,#2563eb);
+    background:linear-gradient(135deg,#25D366,#128C7E);
 
     border-radius:18px;
+
     display:flex;
     align-items:center;
+
     padding:0 15px;
 
     color:white;
-    box-shadow:0 5px 20px rgba(0,0,0,0.35);
 
-    animation:slide 6s infinite;
+    box-shadow:0 5px 18px rgba(0,0,0,0.35);
+
+    animation:slide 7s infinite;
+
+    text-decoration:none;
 }
 
-/* الصورة */
+/* شعار واتساب */
 .logo{
-    width:45px;
-    height:45px;
+    width:48px;
+    height:48px;
+
     border-radius:50%;
+
     background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     margin-left:12px;
+
+    font-size:26px;
 }
 
 /* النص */
@@ -53,16 +66,16 @@ body{
 }
 
 .text p{
-    margin:3px 0 0;
+    margin:4px 0 0;
     font-size:13px;
-    opacity:0.9;
+    opacity:0.95;
 }
 
 /* الحركة */
 @keyframes slide{
 
     0%{
-        left:-320px;
+        left:-340px;
         opacity:0;
     }
 
@@ -71,13 +84,13 @@ body{
         opacity:1;
     }
 
-    70%{
+    75%{
         left:10px;
         opacity:1;
     }
 
     100%{
-        left:350px;
+        left:360px;
         opacity:0;
     }
 }
@@ -86,16 +99,22 @@ body{
 
 <body>
 
-<div class="banner">
+<a class="banner"
+href="https://whatsapp.com/channel/0029VbAqHEeFy7240FP6kH3g/101">
 
-    <div class="logo"></div>
-
-    <div class="text">
-        <h3>القرآن حياة</h3>
-        <p>مرحبا بك داخل التطبيق ✨</p>
+    <div class="logo">
+        💬
     </div>
 
-</div>
+    <div class="text">
+        <h3>انضم لقناتنا عبر واتساب</h3>
+
+        <p>
+            أخبار وتحديثات القرآن حياة ✨
+        </p>
+    </div>
+
+</a>
 
 </body>
 </html>
