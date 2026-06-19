@@ -1,119 +1,127 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== كود Monetag للتحقق ===== -->
     <meta name="monetag" content="4c3a129526a12dde569e5342dc8dca02">
+    <!-- ============================== -->
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            overflow: hidden;
+            font-family: 'Tajawal', Tahoma, sans-serif;
+        }
 
-<style>
-body{
-    margin:0;
-    padding:0;
-    background:transparent;
-    overflow:hidden;
-    font-family:'Tajawal', Tahoma, sans-serif;
-}
+        .banner {
+            position: fixed;
+            top: 8px;
+            left: -340px;
+            width: 310px;
+            height: 72px;
+            background: linear-gradient(135deg, #6C3CE1, #3A1C8C);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            color: white;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
+            animation: slide 7s infinite;
+            text-decoration: none;
+            z-index: 9999;
+        }
 
-.banner{
-    position:fixed;
-    top:8px;
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12px;
+            font-size: 26px;
+        }
 
-    left:-340px;
+        .text h3 {
+            margin: 0;
+            font-size: 16px;
+        }
 
-    width:310px;
-    height:72px;
+        .text p {
+            margin: 4px 0 0;
+            font-size: 12px;
+            opacity: 0.95;
+        }
 
-    /* ألوان جديدة تعبّر عن الانطلاقة (بنفسجي/أزرق عصري) */
-    background:linear-gradient(135deg,#6C3CE1,#3A1C8C);
+        @keyframes slide {
+            0% {
+                left: -340px;
+                opacity: 0;
+            }
+            10% {
+                left: 10px;
+                opacity: 1;
+            }
+            75% {
+                left: 10px;
+                opacity: 1;
+            }
+            100% {
+                left: 360px;
+                opacity: 0;
+            }
+        }
 
-    border-radius:18px;
-
-    display:flex;
-    align-items:center;
-
-    padding:0 15px;
-
-    color:white;
-
-    box-shadow:0 5px 18px rgba(0,0,0,0.35);
-
-    animation:slide 7s infinite;
-
-    text-decoration:none;
-}
-
-.logo{
-    width:48px;
-    height:48px;
-
-    border-radius:50%;
-
-    background:white;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    margin-left:12px;
-
-    font-size:26px;
-}
-
-.text h3{
-    margin:0;
-    font-size:16px;
-}
-
-.text p{
-    margin:4px 0 0;
-    font-size:12px;
-    opacity:0.95;
-}
-
-@keyframes slide{
-
-    0%{
-        left:-340px;
-        opacity:0;
-    }
-
-    10%{
-        left:10px;
-        opacity:1;
-    }
-
-    75%{
-        left:10px;
-        opacity:1;
-    }
-
-    100%{
-        left:360px;
-        opacity:0;
-    }
-}
-</style>
+        /* تحسين للجوال */
+        @media (max-width: 480px) {
+            .banner {
+                width: 260px;
+                height: 64px;
+                top: 6px;
+                padding: 0 10px;
+            }
+            .logo {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                margin-left: 8px;
+            }
+            .text h3 {
+                font-size: 14px;
+            }
+            .text p {
+                font-size: 11px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<a class="banner"
-target="_blank"
-href="https://whatsapp.com/channel/0029VbCa4oUBA1evhpkGvr3I">
+    <!-- ===== البانر الخاص بك ===== -->
+    <a class="banner" target="_blank" href="https://whatsapp.com/channel/0029VbCa4oUBA1evhpkGvr3I">
+        <div class="logo">🚀</div>
+        <div class="text">
+            <h3>🚀 انطلاقة GMube الجديدة</h3>
+            <p>انضم لمجموعة الواتساب الآن ✨</p>
+        </div>
+    </a>
 
-    <div class="logo">
-        🚀
-    </div>
-
-    <div class="text">
-        <h3>🚀 انطلاقة GMube الجديدة</h3>
-
-        <p>
-            انضم لمجموعة الواتساب الآن ✨
-        </p>
-    </div>
-
-</a>
+    <!-- =================================================== -->
+    <!-- ===== ضع كود سكربت Monetag هنا ===== -->
+    <!-- انسخ الكود الذي أعطتك إياه Monetag وألصقه هنا -->
+    <!-- =================================================== -->
+    <script>
+        // ضع هنا كود السكربت الكامل من Monetag
+        // مثال (وليس الكود الحقيقي):
+        // (function() { ... })();
+    </script>
+    <!-- =================================================== -->
 
 </body>
 </html>
